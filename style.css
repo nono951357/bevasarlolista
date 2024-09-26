@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper-15 {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.checkbox-wrapper-15.x0 {
+    background-color: #f9f9f9;
+}
+
+.checkbox-wrapper-15.x1 {
+    background-color: #e9e9e9;
+}
+
+.inp-cbx {
+    display: none;
+}
+
+.cbx {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+}
+
+.cbx span {
+    display: flex;
+    align-items: center;
+}
+
+.cbx svg {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px;
+    margin-right: 5px;
+}
+
+.cbx span:last-child {
+    margin-left: 10px;
+    font-size: 1.2em; /* Increase font size */
+    flex-grow: 1;
+    text-align: center; /* Center the text */
+}
+
+.inp-cbx:checked + .cbx svg polyline {
+    stroke: #00aaff;
+}
+
+.inp-cbx:checked + .cbx span:last-child {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+button {
+    margin-left: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1a1a;
+}
